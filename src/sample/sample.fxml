@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import java.net.URL?>
+<BorderPane prefHeight="393.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller"
+            fx:id="prozor">
+    <stylesheets>
+        <URL value="@izgled.css" />
+    </stylesheets>
+    <top>
+        <HBox alignment="TOP_LEFT">
+            <children>
+                <Label alignment="BOTTOM_LEFT" text="Uzorak: ">
+                    <HBox.margin>
+                        <Insets bottom="3.0" right="5.0" top="7.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField>
+                    <HBox.margin>
+                        <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button text="Traži">
+                    <HBox.margin>
+                        <Insets bottom="3.0" left="5.0" right="5.0" top="3.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="2.0" />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="dioProzora" />
+    </center>
+    <right>
+        <ScrollBar orientation="VERTICAL" fx:id="dioProzora1"/>
+    </right>
+    <bottom>
+        <ScrollBar fx:id="dioProzora2" />
+    </bottom>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="2.0"/>
+    </padding>
+</BorderPane>
